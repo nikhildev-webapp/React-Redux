@@ -1,10 +1,8 @@
 import './App.css'
-import Condition from './components/ConditionalRendering/Condition'
-import Form from './components/Form/Form'
-import List from './components/ListRendering/List'
-import IntroProps from './components/Props/IntroProps'
-import UseState from './components/State/UseState'
-
+import ExpenseTracker from './components/Hooks/ExpenseTracker'
+import FocusInput from './components/Hooks/FocusInput'
+import HooksIntro from './components/Hooks/HooksIntro'
+import LiveClock from './components/Hooks/LiveClock'
 
 function App() {
   return (
@@ -13,14 +11,13 @@ function App() {
         <h1 className='font-bold'>React+Redux</h1>
         <p>Learn React and Redux from Basics</p>
       </div>
-      
+     <div className="container"> 
         {/* Add components here...*/}
-        <IntroProps name='Nikhil' age='20' profession='Software Developer' />
-        <UseState />
-        <List />
-        <Condition />
-        <Form/>
-       
+        <HooksIntro />
+        <ExpenseTracker />
+        <LiveClock />
+        <FocusInput/>
+     </div>
       
     </>
   )
