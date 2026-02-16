@@ -18,9 +18,7 @@ function App() {
       </div>
      <div className="container"> 
         {/* Add components here...*/}   
-        <CustomHook/>
-        <Search/>
-        <User/>
+        
      </div>
       
     </>
