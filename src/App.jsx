@@ -1,8 +1,5 @@
-import { Provider } from "react-redux";
 import "./App.css";
-import Counter from "./components/ReduxTool-kit/Counter/Counter";
-import ReduxIntro from "./components/ReduxTool-kit/ReduxIntro";
-import { store } from "./components/ReduxTool-kit/Counter/store";
+
 
 function App() {
   return (
@@ -13,10 +10,7 @@ function App() {
       </div>
       <div className="container">
         {/* Add components here...*/}
-        <ReduxIntro />
-        <Provider store={store}>
-          <Counter />
-        </Provider>
+        
       </div>
     </>
   );
