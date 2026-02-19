@@ -1,4 +1,7 @@
 import "./App.css";
+import AddUserForm from "./components/Axios/AddUserForm";
+import AxiosIntro from "./components/Axios/AxiosIntro";
+import UserList from "./components/Axios/UserList";
 
 
 function App() {
@@ -10,7 +13,8 @@ function App() {
       </div>
       <div className="container">
         {/* Add components here...*/}
-        
+        <AxiosIntro />
+        <UserList />
       </div>
     </>
   );
