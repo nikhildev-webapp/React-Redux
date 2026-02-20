@@ -1,10 +1,25 @@
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
-import AddUserForm from "./components/Axios/AddUserForm";
-import AxiosIntro from "./components/Axios/AxiosIntro";
-import UserList from "./components/Axios/UserList";
+import RouterIntro from "./components/React-Router/RouterIntro";
+import Navbar from "./components/React-Router/Navbar";
+import About from "./components/React-Router/About";
+import Contact from "./components/React-Router/Contact";
 
 
 function App() {
+  //!React router routes:
+  // const router = createBrowserRouter([
+  //   {
+  //     path: '/',
+  //     element: <Navbar />,
+  //     children:[
+  //       { index: true, element: <RouterIntro /> },
+  //       { path: '/about', element: <About /> },
+  //       {path:'/contact',element:<Contact/>}
+  //     ]
+
+  //   }
+  // ])
   return (
     <>
       <div className="container flex flex-col justify-center items-center text-white w-auto w-">
@@ -13,9 +28,10 @@ function App() {
       </div>
       <div className="container">
         {/* Add components here...*/}
-        <AxiosIntro />
-        <UserList />
+        
       </div>
+       {/* Router Provider⬇️ */}
+       {/* <RouterProvider router={router}></RouterProvider>  */}
     </>
   );
 }
