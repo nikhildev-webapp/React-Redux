@@ -10,6 +10,7 @@ import TypeInput from "./components/Exercises/TypeInput";
 import RandomDogImage from "./components/Exercises/RandomDogImage";
 import { SetLogin } from "./components/Exercises/SetLogin";
 import ProductList from "./components/Exercises/ProductList";
+import TaskManager from "./components/Exercises/TaskManager";
 
 
 function App() {
@@ -34,12 +35,7 @@ function App() {
       </div>
       <div className="container">
         {/* Add components here...*/}
-        <ProfileCard name='Nikhil' age='20' education='Bachelors' profession='Software Developer' quote={'One Line Code At Time'} />
-        <Counter />
-        <TypeInput />
-        <RandomDogImage />
-        <SetLogin />
-        <ProductList/>
+        <TaskManager/>
       </div>
        {/* Router Provider⬇️ */}
        {/* <RouterProvider router={router}></RouterProvider>  */}
